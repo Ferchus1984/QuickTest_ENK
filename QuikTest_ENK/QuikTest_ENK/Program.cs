@@ -343,7 +343,8 @@ namespace QuikTest_ENK
         }
 
 
-        //jpjotls nuevo cambio
+        //Static void Main (string[] args)
+        //
 
 
     }
