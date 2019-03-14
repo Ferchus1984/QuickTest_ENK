@@ -19,9 +19,11 @@ namespace GAcademy_2
 
             //Console.ReadLine();
 
-            Ifs();
+            //Ifs();
+            //Console.ReadLine();
+           
+          Console.WriteLine(GetMax(2, 10));
             Console.ReadLine();
-
 
 
         }
@@ -65,27 +67,55 @@ namespace GAcademy_2
 
          */
 
-        static void Ifs (string[] rob)
+        static void Ifs()
         {
             bool isMale = false;
+            bool isTall = true;
 
-            if (isMale)
+            if (isMale && isTall)
             {
-                Console.WriteLine("you are ");
-
-
-
+                Console.WriteLine("you are Male and Tall");
+            }
+            else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are Male but you are not tall");
+            }
+            else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are a tall female");
             }
 
             else
             {
-
-
-
+                Console.WriteLine("You are either not male or not tall ");
             }
 
 
 
+
+
+
+
+        }
+
+
+        /*MORE if Statements */
+
+        static int GetMax(int num1, int num2)
+        {
+            int result;
+
+            if (num1 > num2)
+            {
+                result = num1;
+            }
+            else
+            {
+                result = num2;
+
+            }
+
+            return result;
         }
 
 
